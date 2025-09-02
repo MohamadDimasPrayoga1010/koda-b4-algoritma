@@ -1,0 +1,10 @@
+DECLARE Angka : INTEGER
+DECLARE Hasil : INTEGER
+
+Angka <- 7
+Hasil <- Angka % 2
+IF Hasil == 0 THEN
+OUTPUT "Genap"
+ELSE 
+OUTPUT "Ganjil"
+ENDIF
