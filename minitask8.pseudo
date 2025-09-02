@@ -1,12 +1,14 @@
 DECLARE Ongkir : INTEGER
 DECLARE Jarak : INTEGER
+DECLARE Total : INTEGER
 
 
-INPUT Jarak
-IF Jarak <= 5 THEN
-Ongkir <- 8000
+Jarak <- 5
+IF Jarak >= 5 THEN
+Ongkir <- 8000 + 3000 * (Jarak - 5)
+OUTPUT Ongkir
 ELSE
-Ongkir <-8000 + 3000 * (Jarak - 5)
+Ongkir <- 8000 
+OUTPUT Ongkir
 ENDIF
 
-OUTPUT Ongkir
