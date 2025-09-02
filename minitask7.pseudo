@@ -1,13 +1,26 @@
 DECLARE Phi : INTEGER
 DECLARE R : INTEGER
 DECLARE Hasil : INTEGER
-Phi <- 3.14
-R <- 14
+DECLARE Keliling : INTEGER
+DECLARE Phi2 : INTEGER
+DECLARE JariJari : INTEGER
 
-IF R % 7 == 0 THEN
-Phi <- 22/7
-OUTPUT Hasil <- Phi * R * R
+R <- 7
+Phi <- R % 7
+
+IF Phi == 0 THEN
+Phi <- 22/7 * R * R 
+OUTPUT "Luas", Hasil <- Phi
 ELSE 
-Phi <- 3.14
-OUTPUT Hasil <- Phi * R * R
+Phi <- 3.14 * R * R
+OUTPUT "Luas", Hasil <- Phi
 ENDIF
+
+JariJari <- 7
+Phi2 <- JariJari % 7
+
+IF Phi2 == 0 THEN
+Phi2 <- 2 * 22/7 * JariJari
+OUTPUT "Keliling", Keliling <- Phi2
+Phi2 <- 2 * 3.14 * JariJari
+OUTPUT "Keliling", Keliling <- Phi2
