@@ -1,0 +1,13 @@
+DECLARE Phi : INTEGER
+DECLARE R : INTEGER
+DECLARE Hasil : INTEGER
+Phi <- 3.14
+R <- 14
+
+IF R % 7 == 0 THEN
+Phi <- 22/7
+OUTPUT Hasil <- Phi * R * R
+ELSE 
+Phi <- 3.14
+OUTPUT Hasil <- Phi * R * R
+ENDIF
