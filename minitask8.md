@@ -5,9 +5,9 @@
 flowchart TD
 
 
-Start((start)) --> Jarak[/Jarak/] --> Decision{Jarak <= 5} -- True -->ongkir1[ongkir = 8000] -->ongkir[/ongkir/]
+Start((start)) --> Jarak[/Jarak/] --> Decision{Jarak >= 5} -- True -->ongkir1[Total = 8000] -->TotalLebih[/Total/] -->End(((end)))
 
-Decision{Jarak <= 5} -- False -->ongkir2[Ekstra 3000 perkilometer]  -->ongkir[/ongkir/] --> Stop(((End))) 
+Decision{Jarak >= 5} -- False -->ongkir2[Jarak Lebih = Jarak - 5]  -->ongkir[Total Lebih = Jarak Lebih * 3Rb] -->JarakLebih[/Total Lebih/] -->End(((end)))
 ```
 
 
