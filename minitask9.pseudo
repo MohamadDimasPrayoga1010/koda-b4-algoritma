@@ -1,0 +1,22 @@
+DECLARE Score : INTEGER
+
+Score <- 0
+
+IF (Score < 0) OR (Score > 100) THEN
+    OUTPUT "Error"
+ELSE IF (Score >= 90) AND (Score <= 100) THEN
+    OUTPUT "Grade A"
+ELSE IF (Score >= 75) AND (Score <= 89) THEN
+    OUTPUT "Grade B"
+ELSE IF (Score >= 60) AND (Score <= 74) THEN
+    OUTPUT "Grade C"
+ELSE IF (Score >= 40) AND (Score <= 59) THEN
+    OUTPUT "Grade D"
+ELSE IF (Score >= 20) AND (Score <= 39) THEN
+    OUTPUT "Grade E"
+ELSE IF (Score >= 0) AND (Score <= 19) THEN
+    OUTPUT "Grade F"
+ELSE
+OUTPUT "Error"
+
+ENDIF
