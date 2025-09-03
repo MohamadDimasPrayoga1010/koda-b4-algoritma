@@ -4,7 +4,9 @@
 
 flowchart TD
 
-Start((Start))--> Grade[/Get Score/] -->Score{Score >= 90 <=100} -- True -->A[/Grade A/] -->End(((End)))
+Start((Start))--> Grade[/Score/] -->Err{Score > 100 OR < 0} -- False -->Score{Score >= 90 <=100} -- True -->A[/Grade A/] -->End(((End)))
+
+Err{Score > 100 OR < 0} -- True -->End(((End)))
 
 
 Score{Score >= 90 & <=100} -- False -->ScoreB{Score >= 75 & <= 89} -- True -->B[/Grade B/] -->End(((End)))
