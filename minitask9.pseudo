@@ -5,18 +5,19 @@ Score <- 0
 IF (Score < 0) OR (Score > 100) THEN
     OUTPUT "Error"
 ELSE IF (Score >= 90) AND (Score <= 100) THEN
-    OUTPUT "Grade A"
+    OUTPUT "A"
 ELSE IF (Score >= 75) AND (Score <= 89) THEN
-    OUTPUT "Grade B"
+    OUTPUT "B"
 ELSE IF (Score >= 60) AND (Score <= 74) THEN
-    OUTPUT "Grade C"
+    OUTPUT "C"
 ELSE IF (Score >= 40) AND (Score <= 59) THEN
-    OUTPUT "Grade D"
+    OUTPUT "D"
 ELSE IF (Score >= 20) AND (Score <= 39) THEN
-    OUTPUT "Grade E"
+    OUTPUT "E"
 ELSE IF (Score >= 0) AND (Score <= 19) THEN
-    OUTPUT "Grade F"
+    OUTPUT "F"
 ELSE
 OUTPUT "Error"
 
 ENDIF
+
