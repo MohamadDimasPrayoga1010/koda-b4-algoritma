@@ -4,11 +4,33 @@
 
 flowchart TD
 
+START@{shape: circ, label: "Start"}
+STOP@{shape: dbl-circ, label: "Stop"}
 
-Start((start)) --> Jarak[/Jarak/] --> Decision{Jarak >= 5} -- True -->ongkir1[Total = 8000] -->TotalLebih[/Total/] -->End(((end)))
+JARAK@{shape: lean-r, label: "jarak"}
+DECISIONJARAK@{shape: diam, label: "jarak >= 5"}
 
-Decision{Jarak >= 5} -- False -->ongkir2[Jarak Lebih = Jarak - 5]  -->ongkir[Total Lebih = Jarak Lebih * 3] -->JarakLebih[/Total Lebih/] -->End(((end)))
+JARAKLEBIH@{shape: rect, label: "JarakLebih = Jarak - 5"}
+TOTALLEBIH@{shape: rect, label: "TotalLebih = JarakLebih * 3"}
+
+TOTALLEBIH2@{shape: lean-r, label: "TotalLebih"}
+
+TOTAL@{shape: lean-r, label: "Total = 8000"}
+TOTAL2@{shape: lean-r, label: "Total"}
+
+
+
+START-->JARAK
+JARAK-->DECISIONJARAK
+DECISIONJARAK--TRUE-->TOTAL
+DECISIONJARAK--FALSE-->JARAKLEBIH
+
+JARAKLEBIH-->TOTALLEBIH
+TOTALLEBIH-->TOTALLEBIH2    
+
+TOTAL-->TOTAL2
+TOTAL2-->STOP
+TOTALLEBIH2-->STOP
 ```
-
 
 
